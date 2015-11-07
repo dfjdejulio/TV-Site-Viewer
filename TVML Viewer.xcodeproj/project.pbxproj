@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		472A65631BEE8C690093418F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65621BEE8C690093418F /* main.m */; };
+		472A65661BEE8C690093418F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65651BEE8C690093418F /* AppDelegate.m */; };
+		472A65691BEE8C690093418F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65681BEE8C690093418F /* ViewController.m */; };
+		472A656C1BEE8C690093418F /* TVML_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 472A656A1BEE8C690093418F /* TVML_Viewer.xcdatamodeld */; };
+		472A656F1BEE8C690093418F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472A656D1BEE8C690093418F /* Main.storyboard */; };
+		472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472A65701BEE8C6A0093418F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		472A655E1BEE8C690093418F /* TVML Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TVML Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		472A65621BEE8C690093418F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		472A65641BEE8C690093418F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		472A65651BEE8C690093418F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		472A65671BEE8C690093418F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		472A65681BEE8C690093418F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		472A656B1BEE8C690093418F /* TVML_Viewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TVML_Viewer.xcdatamodel; sourceTree = "<group>"; };
+		472A656E1BEE8C690093418F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		472A65701BEE8C6A0093418F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		472A65721BEE8C6A0093418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		472A655B1BEE8C690093418F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		472A65551BEE8C690093418F = {
+			isa = PBXGroup;
+			children = (
+				472A65601BEE8C690093418F /* TVML Viewer */,
+				472A655F1BEE8C690093418F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		472A655F1BEE8C690093418F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				472A655E1BEE8C690093418F /* TVML Viewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		472A65601BEE8C690093418F /* TVML Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				472A65641BEE8C690093418F /* AppDelegate.h */,
+				472A65651BEE8C690093418F /* AppDelegate.m */,
+				472A65671BEE8C690093418F /* ViewController.h */,
+				472A65681BEE8C690093418F /* ViewController.m */,
+				472A656D1BEE8C690093418F /* Main.storyboard */,
+				472A65701BEE8C6A0093418F /* Assets.xcassets */,
+				472A65721BEE8C6A0093418F /* Info.plist */,
+				472A656A1BEE8C690093418F /* TVML_Viewer.xcdatamodeld */,
+				472A65611BEE8C690093418F /* Supporting Files */,
+			);
+			path = "TVML Viewer";
+			sourceTree = "<group>";
+		};
+		472A65611BEE8C690093418F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				472A65621BEE8C690093418F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		472A655D1BEE8C690093418F /* TVML Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 472A65751BEE8C6A0093418F /* Build configuration list for PBXNativeTarget "TVML Viewer" */;
+			buildPhases = (
+				472A655A1BEE8C690093418F /* Sources */,
+				472A655B1BEE8C690093418F /* Frameworks */,
+				472A655C1BEE8C690093418F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TVML Viewer";
+			productName = "TVML Viewer";
+			productReference = 472A655E1BEE8C690093418F /* TVML Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		472A65561BEE8C690093418F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = AISB;
+				TargetAttributes = {
+					472A655D1BEE8C690093418F = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 472A65591BEE8C690093418F /* Build configuration list for PBXProject "TVML Viewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 472A65551BEE8C690093418F;
+			productRefGroup = 472A655F1BEE8C690093418F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				472A655D1BEE8C690093418F /* TVML Viewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		472A655C1BEE8C690093418F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */,
+				472A656F1BEE8C690093418F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		472A655A1BEE8C690093418F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472A656C1BEE8C690093418F /* TVML_Viewer.xcdatamodeld in Sources */,
+				472A65691BEE8C690093418F /* ViewController.m in Sources */,
+				472A65661BEE8C690093418F /* AppDelegate.m in Sources */,
+				472A65631BEE8C690093418F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		472A656D1BEE8C690093418F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				472A656E1BEE8C690093418F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		472A65731BEE8C6A0093418F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		472A65741BEE8C6A0093418F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		472A65761BEE8C6A0093418F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "TVML Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.aisb.TVML-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		472A65771BEE8C6A0093418F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "TVML Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.aisb.TVML-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		472A65591BEE8C690093418F /* Build configuration list for PBXProject "TVML Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472A65731BEE8C6A0093418F /* Debug */,
+				472A65741BEE8C6A0093418F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		472A65751BEE8C6A0093418F /* Build configuration list for PBXNativeTarget "TVML Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472A65761BEE8C6A0093418F /* Debug */,
+				472A65771BEE8C6A0093418F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		472A656A1BEE8C690093418F /* TVML_Viewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				472A656B1BEE8C690093418F /* TVML_Viewer.xcdatamodel */,
+			);
+			currentVersion = 472A656B1BEE8C690093418F /* TVML_Viewer.xcdatamodel */;
+			path = TVML_Viewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 472A65561BEE8C690093418F /* Project object */;
+}
