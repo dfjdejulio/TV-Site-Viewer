@@ -1,13 +1,16 @@
 {
   "layers" : [
     {
-      "filename" : "Front.imagestacklayer"
+      "filename" : "Large TVML.imagestacklayer"
     },
     {
-      "filename" : "Middle.imagestacklayer"
+      "filename" : "Large Pyramid.imagestacklayer"
     },
     {
-      "filename" : "Back.imagestacklayer"
+      "filename" : "Large Eye.imagestacklayer"
+    },
+    {
+      "filename" : "Large Background.imagestacklayer"
     }
   ],
   "info" : {
