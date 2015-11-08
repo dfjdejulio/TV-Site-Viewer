@@ -26,6 +26,7 @@
 		472A656E1BEE8C690093418F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		472A65701BEE8C6A0093418F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472A65721BEE8C6A0093418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		479BACE11BF014A20038197A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		472A65551BEE8C690093418F = {
 			isa = PBXGroup;
 			children = (
+				479BACE11BF014A20038197A /* README.md */,
 				472A65601BEE8C690093418F /* TVML Viewer */,
 				472A655F1BEE8C690093418F /* Products */,
 			);
