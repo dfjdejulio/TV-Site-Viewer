@@ -7,6 +7,10 @@ var SimplePage = function(url) {
     function onSelect(event) {
         var ele = event.target
         var href = ele.getAttribute("href")
+        var mimetype = ele.getAttribute("type")
+
+        // The plan is to use the type to determine whether to load a page
+        // or queue media playback.
 
         if(href) {
             new SimplePage(href).load();
