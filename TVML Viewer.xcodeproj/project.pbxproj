@@ -10,7 +10,6 @@
 		4719F3E01C407D95000974CF /* TVMLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4719F3DF1C407D95000974CF /* TVMLKit.framework */; };
 		472A65631BEE8C690093418F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65621BEE8C690093418F /* main.m */; };
 		472A65661BEE8C690093418F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65651BEE8C690093418F /* AppDelegate.m */; };
-		472A656C1BEE8C690093418F /* TVML_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 472A656A1BEE8C690093418F /* TVML_Viewer.xcdatamodeld */; };
 		472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472A65701BEE8C6A0093418F /* Assets.xcassets */; };
 		473E5EDA1C40872E00278EA1 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = 473E5ED91C40872E00278EA1 /* stuff */; };
 /* End PBXBuildFile section */
@@ -21,10 +20,6 @@
 		472A65621BEE8C690093418F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		472A65641BEE8C690093418F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		472A65651BEE8C690093418F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		472A65671BEE8C690093418F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		472A65681BEE8C690093418F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		472A656B1BEE8C690093418F /* TVML_Viewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TVML_Viewer.xcdatamodel; sourceTree = "<group>"; };
-		472A656E1BEE8C690093418F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		472A65701BEE8C6A0093418F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472A65721BEE8C6A0093418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473E5ED91C40872E00278EA1 /* stuff */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stuff; path = "TVML Viewer/stuff"; sourceTree = "<group>"; };
@@ -47,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				473E5ED91C40872E00278EA1 /* stuff */,
-				4719F3DF1C407D95000974CF /* TVMLKit.framework */,
 				479BACE11BF014A20038197A /* README.md */,
 				472A65601BEE8C690093418F /* TVML Viewer */,
 				472A655F1BEE8C690093418F /* Products */,
@@ -67,12 +61,8 @@
 			children = (
 				472A65641BEE8C690093418F /* AppDelegate.h */,
 				472A65651BEE8C690093418F /* AppDelegate.m */,
-				472A65671BEE8C690093418F /* ViewController.h */,
-				472A65681BEE8C690093418F /* ViewController.m */,
-				472A656D1BEE8C690093418F /* Main.storyboard */,
 				472A65701BEE8C6A0093418F /* Assets.xcassets */,
 				472A65721BEE8C6A0093418F /* Info.plist */,
-				472A656A1BEE8C690093418F /* TVML_Viewer.xcdatamodeld */,
 				472A65611BEE8C690093418F /* Supporting Files */,
 			);
 			path = "TVML Viewer";
@@ -81,6 +71,7 @@
 		472A65611BEE8C690093418F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4719F3DF1C407D95000974CF /* TVMLKit.framework */,
 				472A65621BEE8C690093418F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -156,24 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				472A656C1BEE8C690093418F /* TVML_Viewer.xcdatamodeld in Sources */,
 				472A65661BEE8C690093418F /* AppDelegate.m in Sources */,
 				472A65631BEE8C690093418F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		472A656D1BEE8C690093418F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				472A656E1BEE8C690093418F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		472A65731BEE8C6A0093418F /* Debug */ = {
@@ -304,19 +283,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		472A656A1BEE8C690093418F /* TVML_Viewer.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				472A656B1BEE8C690093418F /* TVML_Viewer.xcdatamodel */,
-			);
-			currentVersion = 472A656B1BEE8C690093418F /* TVML_Viewer.xcdatamodel */;
-			path = TVML_Viewer.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 472A65561BEE8C690093418F /* Project object */;
 }
