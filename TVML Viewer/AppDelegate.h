@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <TVMLKit/TVMLKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, TVApplicationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) TVApplicationController *appController;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

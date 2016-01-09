@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4719F3E01C407D95000974CF /* TVMLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4719F3DF1C407D95000974CF /* TVMLKit.framework */; };
 		472A65631BEE8C690093418F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65621BEE8C690093418F /* main.m */; };
 		472A65661BEE8C690093418F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65651BEE8C690093418F /* AppDelegate.m */; };
-		472A65691BEE8C690093418F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65681BEE8C690093418F /* ViewController.m */; };
 		472A656C1BEE8C690093418F /* TVML_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 472A656A1BEE8C690093418F /* TVML_Viewer.xcdatamodeld */; };
-		472A656F1BEE8C690093418F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472A656D1BEE8C690093418F /* Main.storyboard */; };
 		472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472A65701BEE8C6A0093418F /* Assets.xcassets */; };
+		473E5EDA1C40872E00278EA1 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = 473E5ED91C40872E00278EA1 /* stuff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4719F3DF1C407D95000974CF /* TVMLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVMLKit.framework; path = System/Library/Frameworks/TVMLKit.framework; sourceTree = SDKROOT; };
 		472A655E1BEE8C690093418F /* TVML Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TVML Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		472A65621BEE8C690093418F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		472A65641BEE8C690093418F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		472A656E1BEE8C690093418F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		472A65701BEE8C6A0093418F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472A65721BEE8C6A0093418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473E5ED91C40872E00278EA1 /* stuff */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stuff; path = "TVML Viewer/stuff"; sourceTree = "<group>"; };
 		479BACE11BF014A20038197A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4719F3E01C407D95000974CF /* TVMLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,8 @@
 		472A65551BEE8C690093418F = {
 			isa = PBXGroup;
 			children = (
+				473E5ED91C40872E00278EA1 /* stuff */,
+				4719F3DF1C407D95000974CF /* TVMLKit.framework */,
 				479BACE11BF014A20038197A /* README.md */,
 				472A65601BEE8C690093418F /* TVML Viewer */,
 				472A655F1BEE8C690093418F /* Products */,
@@ -139,8 +144,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473E5EDA1C40872E00278EA1 /* stuff in Resources */,
 				472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */,
-				472A656F1BEE8C690093418F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +157,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				472A656C1BEE8C690093418F /* TVML_Viewer.xcdatamodeld in Sources */,
-				472A65691BEE8C690093418F /* ViewController.m in Sources */,
 				472A65661BEE8C690093418F /* AppDelegate.m in Sources */,
 				472A65631BEE8C690093418F /* main.m in Sources */,
 			);

@@ -16,7 +16,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    TVApplicationControllerContext *appControllerContext = [[TVApplicationControllerContext alloc] init];
+
+    NSURL *jsURL = [[NSBundle mainBundle] URLForResource:@"app" withExtension:@"js" subdirectory:@"stuff"];
+    appControllerContext.javaScriptApplicationURL = jsURL;
+    NSURL *rootURL = [appControllerContext.javaScriptApplicationURL URLByDeletingLastPathComponent];
+
+    NSMutableDictionary *myLaunchOptions = [launchOptions mutableCopy];
+    if (!myLaunchOptions) {
+        myLaunchOptions = [[NSMutableDictionary alloc] init];
+    }
+    myLaunchOptions[@"BASEURL"] = [rootURL absoluteString];
+    appControllerContext.launchOptions = myLaunchOptions;
+
+    self.appController = [[TVApplicationController alloc] initWithContext:appControllerContext window: self.window delegate: self];
+
     return YES;
 }
 
