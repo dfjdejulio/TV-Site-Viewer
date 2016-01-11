@@ -5,6 +5,7 @@ var SimplePage = function(url) {
     var self = this;
 
     function onSelect(event) {
+        nslog.log('This logging work?');
         var ele = event.target
         var href = ele.getAttribute("href")
         var mimetype = ele.getAttribute("type")

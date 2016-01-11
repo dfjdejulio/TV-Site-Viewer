@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <TVMLKit/TVMLKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, TVApplicationControllerDelegate>
 

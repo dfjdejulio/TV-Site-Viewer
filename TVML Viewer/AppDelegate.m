@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JSCoreToyClass.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,14 @@
     appControllerContext.launchOptions = myLaunchOptions;
 
     self.appController = [[TVApplicationController alloc] initWithContext:appControllerContext window: self.window delegate: self];
+    
+    // If we're going to plug into JavaScriptCore, this is where.
+    [self.appController evaluateInJavaScriptContext:^(JSContext * _Nonnull context) {
+        context[@"nslog"] = [[JSCoreToyClass alloc] init];
+        return;
+    } completion:^(BOOL evaluated) {
+        return;
+    }];
 
     return YES;
 }

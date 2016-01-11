@@ -12,6 +12,7 @@
 		472A65661BEE8C690093418F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65651BEE8C690093418F /* AppDelegate.m */; };
 		472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472A65701BEE8C6A0093418F /* Assets.xcassets */; };
 		473E5EDA1C40872E00278EA1 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = 473E5ED91C40872E00278EA1 /* stuff */; };
+		47F0ED001C442F100070383B /* JSCoreToyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F0ECFF1C442F100070383B /* JSCoreToyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		472A65721BEE8C6A0093418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473E5ED91C40872E00278EA1 /* stuff */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stuff; path = "TVML Viewer/stuff"; sourceTree = "<group>"; };
 		479BACE11BF014A20038197A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		47F0ECFE1C442F100070383B /* JSCoreToyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreToyClass.h; sourceTree = "<group>"; };
+		47F0ECFF1C442F100070383B /* JSCoreToyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreToyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				472A65701BEE8C6A0093418F /* Assets.xcassets */,
 				472A65721BEE8C6A0093418F /* Info.plist */,
 				472A65611BEE8C690093418F /* Supporting Files */,
+				47F0ECFE1C442F100070383B /* JSCoreToyClass.h */,
+				47F0ECFF1C442F100070383B /* JSCoreToyClass.m */,
 			);
 			path = "TVML Viewer";
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			files = (
 				472A65661BEE8C690093418F /* AppDelegate.m in Sources */,
 				472A65631BEE8C690093418F /* main.m in Sources */,
+				47F0ED001C442F100070383B /* JSCoreToyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
