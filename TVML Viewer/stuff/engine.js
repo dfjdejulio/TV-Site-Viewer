@@ -22,6 +22,8 @@ var SimplePage = function(url) {
         var doc = parser.parseFromString(document, "application/xml");
 
         doc.addEventListener("select", onSelect.bind(self));
+        // Other interesting events: "play", "highlight", "holdselect",
+        // or for text fields, "change".
 
         navigationDocument.pushDocument(doc);
     }
