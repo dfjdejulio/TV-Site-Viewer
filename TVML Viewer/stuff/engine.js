@@ -7,11 +7,23 @@ var SimplePage = function(url) {
     function onSelect(event) {
         var ele = event.target
         var href = ele.getAttribute("href")
-        var mimetype = ele.getAttribute("type")
 
-        // The plan is to use the type to determine whether to load a page
-        // or queue media playback.
+        // We'll use "navtype" for a few special operations.
+        if (ele.hasAttribute('navtype')) {
+            switch (ele.getAttribute('navtype')) {
+                case ('back'):
+                    navigationDocument.popDocument()
+                    break;
+                case ('top'):
+                    navigationDocument.popToRootDocument()
+                    break;
+				default:
+                    console.log({message: 'unknown navtype on element',
+                                element: ele});
+            }
+        }
 
+        // In the absence of a navtype, fetch the href and go.
         if(href) {
             new SimplePage(href).load();
         }
