@@ -12,6 +12,7 @@
 		472A65661BEE8C690093418F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65651BEE8C690093418F /* AppDelegate.m */; };
 		472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472A65701BEE8C6A0093418F /* Assets.xcassets */; };
 		473E5EDA1C40872E00278EA1 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = 473E5ED91C40872E00278EA1 /* stuff */; };
+		47882D811C454CF9006D7B8E /* TVKitToyElementClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 47882D801C454CF9006D7B8E /* TVKitToyElementClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		472A65701BEE8C6A0093418F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472A65721BEE8C6A0093418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473E5ED91C40872E00278EA1 /* stuff */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stuff; path = "TVML Viewer/stuff"; sourceTree = "<group>"; };
+		47882D7F1C454CF9006D7B8E /* TVKitToyElementClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVKitToyElementClass.h; sourceTree = "<group>"; };
+		47882D801C454CF9006D7B8E /* TVKitToyElementClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVKitToyElementClass.m; sourceTree = "<group>"; };
 		479BACE11BF014A20038197A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +67,8 @@
 				472A65701BEE8C6A0093418F /* Assets.xcassets */,
 				472A65721BEE8C6A0093418F /* Info.plist */,
 				472A65611BEE8C690093418F /* Supporting Files */,
+				47882D7F1C454CF9006D7B8E /* TVKitToyElementClass.h */,
+				47882D801C454CF9006D7B8E /* TVKitToyElementClass.m */,
 			);
 			path = "TVML Viewer";
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				472A65661BEE8C690093418F /* AppDelegate.m in Sources */,
+				47882D811C454CF9006D7B8E /* TVKitToyElementClass.m in Sources */,
 				472A65631BEE8C690093418F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,10 +29,43 @@
     }
     myLaunchOptions[@"BASEURL"] = [rootURL absoluteString];
     appControllerContext.launchOptions = myLaunchOptions;
+    
+    [TVElementFactory registerViewElementClass: [TVKitToyElementClass class] forElementName: @"toy"];
+    [[TVInterfaceFactory sharedInterfaceFactory] setExtendedInterfaceCreator: self];
 
     self.appController = [[TVApplicationController alloc] initWithContext:appControllerContext window: self.window delegate: self];
-
+    
     return YES;
+}
+
+- (NSURL *) URLForResource:(NSString *)resourceName {
+    NSLog(@"URL for Resource: %@", resourceName);
+    return NULL;
+}
+
+- (UIView *) viewForElement:(TVViewElement *)element existingView:(UIView *)existingView {
+    NSLog(@"\n---\nElement: %@\n---\nView: %@", element, existingView);
+    
+    // If it's an element we know how manage, handle it.
+    if ([element.class isSubclassOfClass:[TVKitToyElementClass class]]) {
+        // If a view is passed in, return it back out.
+        if (existingView) {
+            return existingView;
+        }
+        // No view passed in, let's create one.
+        UITextView *newView = [[UITextView alloc] init];
+        newView.text = @"Hello, sailor!";
+        return newView;
+    }
+    
+    // Otherwise, punt.
+    return NULL;
+}
+
+- (UIViewController *) viewControllerForElement:(TVViewElement *)element existingViewController:(UIViewController *)existingViewController {
+    NSLog(@"\n---\nElement: %@\n---\nController: %@", element, existingViewController);
+    // For now, just punt.  No controller, no delegate, bye bye.
+    return NULL;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
