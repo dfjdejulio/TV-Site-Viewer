@@ -39,13 +39,13 @@
 }
 
 - (NSURL *) URLForResource:(NSString *)resourceName {
+    // Not 100% sure what this method is really for yet.  So let's
+    // log how it's used to see if we can't figure it out.
     NSLog(@"URL for Resource: %@", resourceName);
     return NULL;
 }
 
 - (UIView *) viewForElement:(TVViewElement *)element existingView:(UIView *)existingView {
-    NSLog(@"\n---\nElement: %@\n---\nView: %@", element, existingView);
-    
     // If it's an element we know how manage, handle it.
     if ([element.class isSubclassOfClass:[TVKitToyElementClass class]]) {
         // If a view is passed in, return it back out.
@@ -54,10 +54,11 @@
         }
         // No view passed in, let's create one.
         UITextView *newView = [[UITextView alloc] init];
-        if (element.attributes[@"value"]) {
-            newView.text = element.attributes[@"value"];
+        NSString *value;
+        if ((value = element.attributes[@"value"])) {
+            newView.text = value;
         } else {
-            newView.text = @"No value.";
+            newView.text = @"No value attribute set.";
         }
         return newView;
     }
@@ -69,6 +70,11 @@
 - (UIViewController *) viewControllerForElement:(TVViewElement *)element existingViewController:(UIViewController *)existingViewController {
     NSLog(@"\n---\nElement: %@\n---\nController: %@", element, existingViewController);
     // For now, just punt.  No controller, no delegate, bye bye.
+    /*
+        Thought: is this the controller the best place to put the association
+        between element objects and their view objects?  Doing so could
+        actually let us use completely unmodified element and view classes!
+     */
     return NULL;
 }
 
