@@ -30,7 +30,7 @@
     myLaunchOptions[@"BASEURL"] = [rootURL absoluteString];
     appControllerContext.launchOptions = myLaunchOptions;
     
-    [TVElementFactory registerViewElementClass: [TVKitToyElementClass class] forElementName: @"toy"];
+    [TVElementFactory registerViewElementClass: [TVViewElement class] forElementName: @"toy"];
     [[TVInterfaceFactory sharedInterfaceFactory] setExtendedInterfaceCreator: self];
 
     self.appController = [[TVApplicationController alloc] initWithContext:appControllerContext window: self.window delegate: self];
@@ -47,7 +47,8 @@
 
 - (UIView *) viewForElement:(TVViewElement *)element existingView:(UIView *)existingView {
     // If it's an element we know how manage, handle it.
-    if ([element.class isSubclassOfClass:[TVKitToyElementClass class]]) {
+    // Turns out there's no need for a custom element class for common cases.
+    if ([element.elementName isEqualToString: @"toy"]) {
         // If a view is passed in, return it back out.
         if (existingView) {
             return existingView;
@@ -60,6 +61,9 @@
         } else {
             newView.text = @"No value attribute set.";
         }
+        // Let's make it purple-on-yellow to make the bounds obvious.
+        newView.backgroundColor = [UIColor yellowColor];
+        newView.textColor = [UIColor purpleColor];
         return newView;
     }
     
@@ -68,7 +72,6 @@
 }
 
 - (UIViewController *) viewControllerForElement:(TVViewElement *)element existingViewController:(UIViewController *)existingViewController {
-    NSLog(@"\n---\nElement: %@\n---\nController: %@", element, existingViewController);
     // For now, just punt.  No controller, no delegate, bye bye.
     /*
         Thought: is this the controller the best place to put the association

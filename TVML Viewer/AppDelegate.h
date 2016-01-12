@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <TVMLKit/TVMLKit.h>
-#import "TVKitTOyElementClass.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, TVApplicationControllerDelegate, TVInterfaceCreating>
 
