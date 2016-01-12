@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
   <alertTemplate>
-    <title>TVML Alert Title</title>
-    <description>This is a TVML alert's description.</description>
-    <button href="http://www.aisb.org/~ddj/tvml/list.tvml">
-      <text>Nifty!</text>
-    </button>
+    <title>You're Viewing TVML!</title>
+    <description>You're now viewing a TVML file that was fetched over the web.  It's not a very interesting one, though!  You should go make your own and enter the URL on the start page.</description>
   </alertTemplate>
 </document>
