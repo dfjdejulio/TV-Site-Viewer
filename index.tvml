@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <alertTemplate>
+    <title>TVML Alert Title</title>
+    <description>This is a TVML alert's description.</description>
+    <button href="http://www.aisb.org/~ddj/tvml/list.tvml">
+      <text>Nifty!</text>
+    </button>
+  </alertTemplate>
+</document>
