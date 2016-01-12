@@ -54,7 +54,11 @@
         }
         // No view passed in, let's create one.
         UITextView *newView = [[UITextView alloc] init];
-        newView.text = @"Hello, sailor!";
+        if (element.attributes[@"value"]) {
+            newView.text = element.attributes[@"value"];
+        } else {
+            newView.text = @"No value.";
+        }
         return newView;
     }
     
