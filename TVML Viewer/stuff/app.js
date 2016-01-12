@@ -5,7 +5,7 @@ var startPage = `<?xml version="1.0" encoding="UTF-8"?>
 <title>Starting Address</title>
 <description>Enter the full URL of a TVML file to load.</description>
 </banner>
-<textField keyboardType="url" id="addressbar">http://www.aisb.org/~ddj/tvml/index.tvml</textField>
+<textField keyboardType="url" id="addressbar" />
 <footer>
 <button navtype="go">
 <text>Submit</text>

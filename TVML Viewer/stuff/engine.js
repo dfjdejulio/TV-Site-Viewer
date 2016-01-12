@@ -19,7 +19,9 @@ var SimplePage = function(url) {
                     navigationDocument.popToRootDocument()
                     break;
                 case ('go'): // Go to the location in the "addressbar".
-                    new SimplePage(ele.ownerDocument.getElementById('addressbar').textContent).load();
+                    var addressbar = ele.ownerDocument.getElementById('addressbar');
+                    var address = addressbar.getFeature('Keyboard').text;
+                    new SimplePage(address).load();
                     break;
 				default:
                     console.log({message: 'unknown navtype on element',
@@ -32,12 +34,17 @@ var SimplePage = function(url) {
             }
         }
     }
+    
+    function onChange(event) {
+        
+    }
 
     function pushDoc(document) {
         var parser = new DOMParser();
         var doc = parser.parseFromString(document, "application/xml");
 
         doc.addEventListener("select", onSelect.bind(self));
+        doc.addEventListener("change", onChange.bind(self));
         // Other interesting events: "play", "highlight", "holdselect",
         // or for text fields, "change".
 
