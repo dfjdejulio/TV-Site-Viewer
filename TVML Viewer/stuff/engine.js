@@ -8,24 +8,28 @@ var SimplePage = function(url) {
         var ele = event.target
         var href = ele.getAttribute("href")
 
-        // We'll use "navtype" for a few special operations.
+        // What do it do?
         if (ele.hasAttribute('navtype')) {
+            // We'll use "navtype" for a few special operations.
             switch (ele.getAttribute('navtype')) {
-                case ('back'):
+                case ('back'): // Go "back" one document, shrinking the stack.
                     navigationDocument.popDocument()
                     break;
-                case ('top'):
+                case ('top'): // Restart, shrinking the stack.
                     navigationDocument.popToRootDocument()
+                    break;
+                case ('go'): // Go to the location in the "addressbar".
+                    new SimplePage(ele.ownerDocument.getElementById('addressbar').textContent).load();
                     break;
 				default:
                     console.log({message: 'unknown navtype on element',
                                 element: ele});
             }
-        }
-
-        // In the absence of a navtype, fetch the href and go.
-        if(href) {
-            new SimplePage(href).load();
+        } else {
+            // In the absence of a navtype, fetch the href and go.
+            if(href) {
+                thispage = new SimplePage(href).load();
+            }
         }
     }
 
@@ -37,8 +41,12 @@ var SimplePage = function(url) {
         // Other interesting events: "play", "highlight", "holdselect",
         // or for text fields, "change".
 
+        currentdoc = doc;
+        
         navigationDocument.pushDocument(doc);
     }
+    
+    self.loadLiteral = pushDoc;
 
     self.load = function() {
         var templateXHR = new XMLHttpRequest();
