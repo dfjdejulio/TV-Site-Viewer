@@ -7,14 +7,36 @@ var SimplePage = function(url) {
     function onSelect(event) {
         var ele = event.target
         var href = ele.getAttribute("href")
-        var mimetype = ele.getAttribute("type")
 
-        // The plan is to use the type to determine whether to load a page
-        // or queue media playback.
-
-        if(href) {
-            new SimplePage(href).load();
+        // What do it do?
+        if (ele.hasAttribute('navtype')) {
+            // We'll use "navtype" for a few special operations.
+            switch (ele.getAttribute('navtype')) {
+                case ('back'): // Go "back" one document, shrinking the stack.
+                    navigationDocument.popDocument()
+                    break;
+                case ('top'): // Restart, shrinking the stack.
+                    navigationDocument.popToRootDocument()
+                    break;
+                case ('go'): // Go to the location in the "addressbar".
+                    var addressbar = ele.ownerDocument.getElementById('addressbar');
+                    var address = addressbar.getFeature('Keyboard').text;
+                    new SimplePage(address).load();
+                    break;
+				default:
+                    console.log({message: 'unknown navtype on element',
+                                element: ele});
+            }
+        } else {
+            // In the absence of a navtype, fetch the href and go.
+            if(href) {
+                thispage = new SimplePage(href).load();
+            }
         }
+    }
+    
+    function onChange(event) {
+        
     }
 
     function pushDoc(document) {
@@ -22,11 +44,16 @@ var SimplePage = function(url) {
         var doc = parser.parseFromString(document, "application/xml");
 
         doc.addEventListener("select", onSelect.bind(self));
+        doc.addEventListener("change", onChange.bind(self));
         // Other interesting events: "play", "highlight", "holdselect",
         // or for text fields, "change".
 
+        currentdoc = doc;
+        
         navigationDocument.pushDocument(doc);
     }
+    
+    self.loadLiteral = pushDoc;
 
     self.load = function() {
         var templateXHR = new XMLHttpRequest();
