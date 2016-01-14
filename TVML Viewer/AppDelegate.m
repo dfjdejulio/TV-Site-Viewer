@@ -32,6 +32,15 @@
 
     self.appController = [[TVApplicationController alloc] initWithContext:appControllerContext window: self.window delegate: self];
 
+    // Initialize our app controller's JavaScript context.
+    [self.appController evaluateInJavaScriptContext:^(JSContext * _Nonnull context) {
+        context[@"tvjsutil"] = [TVJSUtil new];  // Set up our utility class.
+    } completion:^(BOOL evaluated) {
+        if (!evaluated) {
+            NSLog(@"%@", @"TVML Viewer: Couldn't initialize JavaScript context.");
+        }
+    }];
+
     return YES;
 }
 
