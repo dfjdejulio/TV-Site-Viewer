@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <listTemplate>
+        <banner>
+            <title>Bookmarks</title>
+        </banner>
+        <list>
+            <section>
+                <listItemLockup href="addressbar.tvml">
+                    <title>Address Bar</title>
+                    <subtitle>Enter a URL manually.</subtitle>
+                </listItemLockup>
+                <listItemLockup href="http://www.aisb.org/~ddj/tvml/list.tvml">
+                    <title>AISB List</title>
+                </listItemLockup>
+            </section>
+        </list>
+    </listTemplate>
+</document>

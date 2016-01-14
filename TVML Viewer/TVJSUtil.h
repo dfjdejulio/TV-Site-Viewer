@@ -17,6 +17,12 @@
 // NSLog with message and JavaScript object.
 - (void) nslog: (NSString *) message withObject: (id) object;
 
+// Figure out an absolute URL.
+- (NSString *) url:(NSString *)rel relativeTo:(NSString *)base;
+
+// Load an absolute URL into a string.
+- (NSString *) load: (NSString *) urlString;
+
 @end
 
 @interface TVJSUtil : NSObject <TVJSUtilExports>

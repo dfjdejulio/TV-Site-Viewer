@@ -17,6 +17,8 @@
 
 @property (strong, nonatomic) TVApplicationController *appController;
 
+// We'll use Core Data for bookmarks maybe?
+
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;

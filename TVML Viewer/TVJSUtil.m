@@ -19,4 +19,22 @@
     NSLog(@"%@ : %@", message, object);
 }
 
+- (NSString *) url:(NSString *)rel relativeTo:(NSString *)base
+{
+    return [[NSURL URLWithString:rel relativeToURL:[NSURL URLWithString:base]] absoluteString];
+}
+
+- (NSString *) load:(NSString *)urlString
+{
+    NSError *loadError = nil;
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSString *value = [NSString stringWithContentsOfURL:url usedEncoding:NULL error:&loadError];
+    if (!value) {
+        NSLog(@"Couldn't load from URL %@, error %@", url, loadError);
+    } else {
+        NSLog(@"Loaded from URL %@", url);
+    }
+    return value;
+}
+
 @end
