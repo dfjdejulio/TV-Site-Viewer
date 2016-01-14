@@ -26,6 +26,7 @@ var SimplePage = function(url) {
 				default:
                     console.log({message: 'unknown navtype on element',
                                 element: ele});
+                    tvjsutil.nslogWithObject('unknown navtype on element ', ele);
             }
         } else {
             // In the absence of a navtype, fetch the href and go.
