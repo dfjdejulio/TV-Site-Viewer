@@ -1,5 +1,7 @@
 # TVML Viewer
 
+## The Basics
+
 Some apps require a lot of rich, custom behavior.  Other apps are almost purely
 contnet-based, and rely only on a small set of standard behaviors.
 
@@ -8,3 +10,10 @@ tags and attributes, for content-based apps to be implemented *entirley* as
 sets of static TVML and asset files.  The idea is, you create an "index.tvml",
 and put everything it links to or references in the same basic area, point
 this app at that area, and you're off and running.
+
+## TODO
+
+* Add native utility functions to TVJS for asset loading and
+NSLog logging. (What else)
+
+* Add support for a "video" tag for embedding videos like images.
