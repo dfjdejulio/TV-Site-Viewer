@@ -14,6 +14,6 @@ this app at that area, and you're off and running.
 ## TODO
 
 * Add native utility functions to TVJS for asset loading and
-NSLog logging. (What else)
+NSLog logging. (What else?)
 
 * Add support for a "video" tag for embedding videos like images.
