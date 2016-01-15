@@ -13,6 +13,6 @@ this app at that area, and you're off and running.
 
 ## TODO
 
-* Add support for a "video" tag for embedding videos like images.
+* Provide usage instructions.
 
 * Something something Bonjour something.
