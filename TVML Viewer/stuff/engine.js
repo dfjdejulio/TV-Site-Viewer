@@ -24,6 +24,15 @@ var SimplePage = function(relUrl, base) {
                     var address = addressbar.getFeature('Keyboard').text;
                     new SimplePage(address, url).load();
                     break;
+                case ('video'): // Play the "href".
+                    var address = tvjsutil.urlRelativeTo(ele.getAttribute('href'), url);
+                    var video = new MediaItem('video', address);
+                    var playlist = new Playlist();
+                    playlist.push(video);
+                    var  player = new Player();
+                    player.playlist = playlist;
+                    player.play();
+                    break;
 				default:
                     console.log({message: 'unknown navtype on element',
                                 element: ele});
