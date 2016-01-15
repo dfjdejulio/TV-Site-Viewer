@@ -11,8 +11,9 @@
 		472A65631BEE8C690093418F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65621BEE8C690093418F /* main.m */; };
 		472A65661BEE8C690093418F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472A65651BEE8C690093418F /* AppDelegate.m */; };
 		472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472A65701BEE8C6A0093418F /* Assets.xcassets */; };
-		473E5EDA1C40872E00278EA1 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = 473E5ED91C40872E00278EA1 /* stuff */; };
 		478F95BB1C47D60A001A6E0B /* TVJSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F95BA1C47D60A001A6E0B /* TVJSUtil.m */; };
+		47DDAEB31C4972700086F1BD /* js in Resources */ = {isa = PBXBuildFile; fileRef = 47DDAEB21C4972700086F1BD /* js */; };
+		47DDAEB61C497B910086F1BD /* tvml in Resources */ = {isa = PBXBuildFile; fileRef = 47DDAEB41C4972780086F1BD /* tvml */; settings = {ASSET_TAGS = (initial, "static-tvml", ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		478F95B91C47D60A001A6E0B /* TVJSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVJSUtil.h; sourceTree = "<group>"; };
 		478F95BA1C47D60A001A6E0B /* TVJSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVJSUtil.m; sourceTree = "<group>"; };
 		479BACE11BF014A20038197A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		47DDAEB21C4972700086F1BD /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = "TVML Viewer/js"; sourceTree = "<group>"; };
+		47DDAEB41C4972780086F1BD /* tvml */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tvml; path = "TVML Viewer/tvml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,8 @@
 		472A65551BEE8C690093418F = {
 			isa = PBXGroup;
 			children = (
+				47DDAEB41C4972780086F1BD /* tvml */,
+				47DDAEB21C4972700086F1BD /* js */,
 				473E5ED91C40872E00278EA1 /* stuff */,
 				479BACE11BF014A20038197A /* README.md */,
 				472A65601BEE8C690093418F /* TVML Viewer */,
@@ -108,6 +113,10 @@
 		472A65561BEE8C690093418F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					initial,
+					"static-tvml",
+				);
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = AISB;
 				TargetAttributes = {
@@ -140,8 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				473E5EDA1C40872E00278EA1 /* stuff in Resources */,
 				472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */,
+				47DDAEB61C497B910086F1BD /* tvml in Resources */,
+				47DDAEB31C4972700086F1BD /* js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +260,7 @@
 				CURRENT_PROJECT_VERSION = 4;
 				INFOPLIST_FILE = "TVML Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.aisb.TVML-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -265,6 +276,7 @@
 				CURRENT_PROJECT_VERSION = 4;
 				INFOPLIST_FILE = "TVML Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.aisb.TVML-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";

@@ -19,14 +19,22 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     TVApplicationControllerContext *appControllerContext = [[TVApplicationControllerContext alloc] init];
 
-    NSURL *jsURL = [[NSBundle mainBundle] URLForResource:@"app" withExtension:@"js" subdirectory:@"stuff"];
+    // Set up the options relating to JavaScript.
+    NSURL *jsURL = [[NSBundle mainBundle] URLForResource:@"app" withExtension:@"js" subdirectory:@"js"];
+    NSURL *jsDirURL = [jsURL URLByDeletingLastPathComponent];
     appControllerContext.javaScriptApplicationURL = jsURL;
-    NSURL *rootURL = [appControllerContext.javaScriptApplicationURL URLByDeletingLastPathComponent];
+    
+    // Set up the options relating to TVML and assets.
+    NSURL *indexURL = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"tvml" subdirectory:@"tvml"];
+    NSURL *rootURL = [indexURL URLByDeletingLastPathComponent];
 
     NSMutableDictionary *myLaunchOptions = [launchOptions mutableCopy];
     if (!myLaunchOptions) {
         myLaunchOptions = [[NSMutableDictionary alloc] init];
     }
+    myLaunchOptions[@"JSURL"] = [jsURL absoluteString];
+    myLaunchOptions[@"JSDIRURL"] = [jsDirURL absoluteString];
+    myLaunchOptions[@"STARTURL"] = [indexURL absoluteString];
     myLaunchOptions[@"BASEURL"] = [rootURL absoluteString];
     appControllerContext.launchOptions = myLaunchOptions;
 

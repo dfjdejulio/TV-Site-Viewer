@@ -1,6 +1,7 @@
 App.onLaunch = function(options) {
+    App.savedOptions = options;
     // Load our main engine.
-    evaluateScripts([`${options.BASEURL}engine.js`],function(success) {
+    evaluateScripts([`${options.JSDIRURL}engine.js`],function(success) {
                     if (!success) {
                     console.log("Couldn't load built-in scripts.");
                     tvjsutil.nslog("Couldn't load built-in scripts.");

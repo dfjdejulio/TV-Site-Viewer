@@ -16,3 +16,6 @@ this app at that area, and you're off and running.
 * Provide usage instructions.
 
 * Something something Bonjour something.
+
+* Support for a custom start URL in "Settings", combined with making the
+TVML assets an on-demand resource."
