@@ -21,7 +21,8 @@
 
 - (NSString *) url:(NSString *)rel relativeTo:(NSString *)base
 {
-    return [[NSURL URLWithString:rel relativeToURL:[NSURL URLWithString:base]] absoluteString];
+    NSString *absoluteString = [[NSURL URLWithString:rel relativeToURL:[NSURL URLWithString:base]] absoluteString];
+    return absoluteString;
 }
 
 - (NSString *) load:(NSString *)urlString
