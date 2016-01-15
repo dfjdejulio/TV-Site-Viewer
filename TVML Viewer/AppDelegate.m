@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MyCustomURLProtocol.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     TVApplicationControllerContext *appControllerContext = [[TVApplicationControllerContext alloc] init];
+
+    [NSURLProtocol registerClass:[MyCustomURLProtocol class]];
 
     NSURL *jsURL = [[NSBundle mainBundle] URLForResource:@"app" withExtension:@"js" subdirectory:@"stuff"];
     appControllerContext.javaScriptApplicationURL = jsURL;

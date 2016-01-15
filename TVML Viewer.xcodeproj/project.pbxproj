@@ -13,6 +13,7 @@
 		472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472A65701BEE8C6A0093418F /* Assets.xcassets */; };
 		473E5EDA1C40872E00278EA1 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = 473E5ED91C40872E00278EA1 /* stuff */; };
 		478F95BB1C47D60A001A6E0B /* TVJSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F95BA1C47D60A001A6E0B /* TVJSUtil.m */; };
+		47DE81811C487837008FA0AC /* MyCustomURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DE81801C487837008FA0AC /* MyCustomURLProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		478F95B91C47D60A001A6E0B /* TVJSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVJSUtil.h; sourceTree = "<group>"; };
 		478F95BA1C47D60A001A6E0B /* TVJSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVJSUtil.m; sourceTree = "<group>"; };
 		479BACE11BF014A20038197A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		47DE817F1C487837008FA0AC /* MyCustomURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomURLProtocol.h; sourceTree = "<group>"; };
+		47DE81801C487837008FA0AC /* MyCustomURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomURLProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				472A65611BEE8C690093418F /* Supporting Files */,
 				478F95B91C47D60A001A6E0B /* TVJSUtil.h */,
 				478F95BA1C47D60A001A6E0B /* TVJSUtil.m */,
+				47DE817F1C487837008FA0AC /* MyCustomURLProtocol.h */,
+				47DE81801C487837008FA0AC /* MyCustomURLProtocol.m */,
 			);
 			path = "TVML Viewer";
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			files = (
 				478F95BB1C47D60A001A6E0B /* TVJSUtil.m in Sources */,
 				472A65661BEE8C690093418F /* AppDelegate.m in Sources */,
+				47DE81811C487837008FA0AC /* MyCustomURLProtocol.m in Sources */,
 				472A65631BEE8C690093418F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
