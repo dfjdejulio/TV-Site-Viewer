@@ -3,7 +3,7 @@
 ## The Basics
 
 Some apps require a lot of rich, custom behavior.  Other apps are almost purely
-contnet-based, and rely only on a small set of standard behaviors.
+content-based, and rely only on a small set of standard behaviors.
 
 This viewer attempts to implement enough standard behaviors, via custom
 tags and attributes, for content-based apps to be implemented *entirely* as
