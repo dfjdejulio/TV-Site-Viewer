@@ -10,8 +10,13 @@
                     <title>Address Bar</title>
                     <subtitle>Enter a URL manually.</subtitle>
                 </listItemLockup>
-                <listItemLockup href="http://www.aisb.org/~ddj/tvml/list.tvml">
-                    <title>AISB List</title>
+                <listItemLockup href="prog.tvml">
+                    <title>Music for Programming</title>
+                    <subtitle>Image and audio from "musicforprogramming.net"</subtitle>"
+                </listItemLockup>
+                <listItemLockup href="abe.tvml">
+                    <title>Abe Vigoda</title>
+                    <subtitle>Image and audio from "abevigoda.com"</subtitle>"
                 </listItemLockup>
             </section>
         </list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<mainTemplate>
+<background>
+<img src="http://musicforprogramming.net/img/mfp.jpg" />
+<audio>
+<asset src="http://datashat.net/music_for_programming_1-datassette.mp3" />
+</audio>
+</background>
+<menubar>
+</menubar>
+</mainTemplate>
+</document>
