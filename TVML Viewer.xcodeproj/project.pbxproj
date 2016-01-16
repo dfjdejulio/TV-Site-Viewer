@@ -14,6 +14,7 @@
 		478F95BB1C47D60A001A6E0B /* TVJSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F95BA1C47D60A001A6E0B /* TVJSUtil.m */; };
 		47DDAEB31C4972700086F1BD /* js in Resources */ = {isa = PBXBuildFile; fileRef = 47DDAEB21C4972700086F1BD /* js */; };
 		47DDAEB61C497B910086F1BD /* tvml in Resources */ = {isa = PBXBuildFile; fileRef = 47DDAEB41C4972780086F1BD /* tvml */; settings = {ASSET_TAGS = (initial, "static-tvml", ); }; };
+		4795A7941C49CF8C00D4C763 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4795A7931C49CF8C00D4C763 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		473E5ED91C40872E00278EA1 /* stuff */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stuff; path = "TVML Viewer/stuff"; sourceTree = "<group>"; };
 		478F95B91C47D60A001A6E0B /* TVJSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVJSUtil.h; sourceTree = "<group>"; };
 		478F95BA1C47D60A001A6E0B /* TVJSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVJSUtil.m; sourceTree = "<group>"; };
+		4795A7931C49CF8C00D4C763 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		479BACE11BF014A20038197A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		47DDAEB21C4972700086F1BD /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = "TVML Viewer/js"; sourceTree = "<group>"; };
 		47DDAEB41C4972780086F1BD /* tvml */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tvml; path = "TVML Viewer/tvml"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				472A65611BEE8C690093418F /* Supporting Files */,
 				478F95B91C47D60A001A6E0B /* TVJSUtil.h */,
 				478F95BA1C47D60A001A6E0B /* TVJSUtil.m */,
+				4795A7931C49CF8C00D4C763 /* Settings.bundle */,
 			);
 			path = "TVML Viewer";
 			sourceTree = "<group>";
@@ -149,6 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473E5EDA1C40872E00278EA1 /* stuff in Resources */,
+				4795A7941C49CF8C00D4C763 /* Settings.bundle in Resources */,
 				472A65711BEE8C6A0093418F /* Assets.xcassets in Resources */,
 				47DDAEB61C497B910086F1BD /* tvml in Resources */,
 				47DDAEB31C4972700086F1BD /* js in Resources */,
@@ -257,7 +262,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				INFOPLIST_FILE = "TVML Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;
@@ -273,7 +278,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				INFOPLIST_FILE = "TVML Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;

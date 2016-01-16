@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    // Deal with preferences.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults registerDefaults:@{@"enable_custom_start": @NO}];
+
     TVApplicationControllerContext *appControllerContext = [[TVApplicationControllerContext alloc] init];
 
     // Set up the options relating to JavaScript.
