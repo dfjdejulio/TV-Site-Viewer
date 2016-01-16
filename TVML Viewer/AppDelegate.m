@@ -28,24 +28,33 @@
     NSURL *jsURL = [[NSBundle mainBundle] URLForResource:@"app" withExtension:@"js" subdirectory:@"js"];
     NSURL *jsDirURL = [jsURL URLByDeletingLastPathComponent];
     appControllerContext.javaScriptApplicationURL = jsURL;
-    
-    // Only load our static TVML assets if we need them.
-    NSSet *tags = [NSSet setWithObject:@"static-tvml"];
-    NSBundleResourceRequest *resourceRequest = [[NSBundleResourceRequest alloc] initWithTags:tags];
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-    [resourceRequest beginAccessingResourcesWithCompletionHandler:^(NSError * _Nullable error) {
-        if (error) {
-            [NSException raise:@"error" format:@"error: %@", error]; // This is a little scary.
-        } else {
+
+    NSURL *indexURL;
+    if (![defaults boolForKey:@"enable_custom_start"]) {
+        // Only load our static TVML assets if "custom start URL" is turned off.
+        NSSet *tags = [NSSet setWithObject:@"static-tvml"];
+        NSBundleResourceRequest *resourceRequest = [[NSBundleResourceRequest alloc] initWithTags:tags];
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+        [resourceRequest beginAccessingResourcesWithCompletionHandler:^(NSError * _Nullable error) {
+            if (error) {
+                [NSException raise:@"error" format:@"error: %@", error]; // This is a little scary.
+            } else {
             
-        }
-        dispatch_semaphore_signal(semaphore);
-    }];
-    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-    // If we got here, I *think* the "URLForResource" stuff will work.
+            }
+            dispatch_semaphore_signal(semaphore);
+        }];
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        // If we got here, I *think* the "URLForResource" stuff will work.
     
-    // Set up the options relating to TVML and assets.
-    NSURL *indexURL = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"tvml" subdirectory:@"tvml"];
+        // Set up the options relating to TVML and assets.
+        indexURL = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"tvml" subdirectory:@"tvml"];
+    } else {
+        // If "custom start URL" is turned on, use that.
+        indexURL = [NSURL URLWithString:[defaults stringForKey:@"custom_url"]];
+        if (!indexURL) {
+            [NSException raise:@"Missing Custom URL" format:@"%@", @"Custom URL turned on but no custom URL set."];
+        }
+    }
     NSURL *rootURL = [indexURL URLByDeletingLastPathComponent];
 
     NSMutableDictionary *myLaunchOptions = [launchOptions mutableCopy];
