@@ -59,7 +59,14 @@
         if ((value = element.attributes[@"value"])) {
             newView.text = value;
         } else {
-            newView.text = @"No value attribute set.";
+            NSError *error;
+            NSDictionary *attributes;
+            //NSString *htmlText = @"<p>The value was <em>not</em> set.</p>";
+            NSData *htmlData = [NSData dataWithContentsOfURL: [NSURL URLWithString:@"http://www.aisb.org/~ddj/text.html"]];
+            NSMutableAttributedString *value = [NSMutableAttributedString alloc];
+            value = [value initWithData:htmlData options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType} documentAttributes:&attributes error:&error];
+            newView.attributedText = value;
+            //newView.text = @"No value attribute set.";
         }
         // Let's make it purple-on-yellow to make the bounds obvious.
         newView.backgroundColor = [UIColor yellowColor];
