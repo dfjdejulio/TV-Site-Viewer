@@ -19,10 +19,15 @@
     NSLog(@"%@ : %@", message, object);
 }
 
-- (NSString *) url:(NSString *)rel relativeTo:(NSString *)base
++ (NSString *) url:(NSString *)rel relativeTo:(NSString *)base
 {
     NSString *absoluteString = [[NSURL URLWithString:rel relativeToURL:[NSURL URLWithString:base]] absoluteString];
     return absoluteString;
+}
+
+- (NSString *) url:(NSString *)rel relativeTo:(NSString *)base
+{
+    return [[self class] url:rel relativeTo:base];
 }
 
 - (NSString *) load:(NSString *)urlString
@@ -37,5 +42,6 @@
     }
     return value;
 }
+
 
 @end

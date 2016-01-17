@@ -27,4 +27,6 @@
 
 @interface TVJSUtil : NSObject <TVJSUtilExports>
 
++ (NSString *) url:(NSString *)rel relativeTo:(NSString *)base;
+
 @end

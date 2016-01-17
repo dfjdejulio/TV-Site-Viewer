@@ -18,6 +18,10 @@
                     <title>Abe Vigoda</title>
                     <subtitle>Image and audio from "abevigoda.com"</subtitle>"
                 </listItemLockup>
+                <listItemLockup href="html.tvml">
+                    <title>HTML</title>
+                    <subtitle>Demo of rendering very limited HTML</subtitle>"
+                </listItemLockup>
             </section>
         </list>
     </listTemplate>

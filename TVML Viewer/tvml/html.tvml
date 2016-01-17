@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<alertTemplate>
+<title style="color: black;">HTML Element</title>
+<description style="color: black;">Use an "html" element with a "src" attribute for very limited HTML rendering support.</description>
+<html src="data:text/html;base64,PGZvbnQgc2l6ZT0iMzYiPkhlcmUncyBhIDxlbT50ZXh0IGZyYWdtZW50PC9lbT4uPC9mb250Pg==" />
+<button navtype='back'><text>Back</text></button>
+<button navtype='top'><text>Top</text></button>
+</alertTemplate>
+</document>
