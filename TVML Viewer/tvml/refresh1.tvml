@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document delay="5" navtype="replace" href="refresh2.tvml">
-<alertTemplate style="color: purple;">
+<document >
+<alertTemplate style="color: purple;" delay="5" navtype="replace" href="refresh2.tvml">
 <title>Refresh Test #1</title>
 <description>This page is supposed to go away by itself..</description>
 <button><text>Placebo</text></button>

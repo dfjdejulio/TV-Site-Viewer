@@ -4,7 +4,11 @@
 var nextUrl;
 var lastUrl;
 var lastDoc;
-var lastDelay;
+var lastDelay = null;
+
+function handleDocumentDelay() {
+    new SimplePage(nextUrl, lastUrl).replace();
+}
 
 var SimplePage = function(relUrl, base) {
     var self = this;
@@ -55,35 +59,53 @@ var SimplePage = function(relUrl, base) {
             }
         }
     }
-
-    self.handleDocumentDelay = function() {
-        new SimplePage(nextUrl, lastUrl).replace()
-    }
     
+    function onRandomEvent(event) {
+        console.log(event.type);
+    }
+
     function parseDoc(document) {
         var parser = new DOMParser();
         var doc = parser.parseFromString(document, "application/xml");
 
-        // Look for stuff to evaluate "on load" here.
-        var delay = doc.documentElement.getAttribute('delay')
-        if (delay) {
-            nextUrl = doc.documentElement.getAttribute('href')
-            lastUrl = url;
-            lastDelay = setTimeout(self.handleDocumentDelay, delay * 1000)
-            console.log('Document has delay attribute.')
-            tvjsutil.nslog('Document element has delay attribute.')
-        }
-
+        // Let people "click" on things.
         doc.addEventListener("select", onSelect.bind(self));
-        // Other interesting events: "play", "highlight", "holdselect",
-        // or for text fields, "change".
+        doc.addEventListener("play", onPlay.bind(self));
+
+        // Do things that depend on the content displaying.
+        doc.addEventListener("appear", onAppear.bind(self));
 
         self.currentdoc = doc;
         
-        //navigationDocument.pushDocument(doc);
         return doc;
     }
+    
+    function onPlay(event) {
+        // For now, treat Play as Select.  Future expansion goes here.
+        onSelect(event);
+    }
 
+    function onAppear(event) {
+        // This seems to be the best place to handle fake meta-refresh.
+        cancelLastDelay();
+        var ele = event.target;
+        var delay = ele.getAttribute('delay');
+        if (delay) {
+            console.log('handling appear event with delay');
+            console.log({element: ele});
+            nextUrl = ele.getAttribute('href');
+            lastUrl = url;
+            lastDelay = setTimeout(handleDocumentDelay, delay * 1000)
+        }
+    }
+    
+    function cancelLastDelay() {
+        if (lastDelay) {
+            clearTimeout(lastDelay);
+            lastDelay = null;
+        }
+    }
+    
     // Not sure how well this will work.  Let's find out!
     self.replace = function() {
         var newDoc = parseDoc(tvjsutil.load(url));
