@@ -60,10 +60,6 @@ var SimplePage = function(relUrl, base) {
         }
     }
     
-    function onRandomEvent(event) {
-        console.log(event.type);
-    }
-
     function parseDoc(document) {
         var parser = new DOMParser();
         var doc = parser.parseFromString(document, "application/xml");
