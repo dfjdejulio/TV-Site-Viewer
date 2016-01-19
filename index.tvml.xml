@@ -2,6 +2,6 @@
 <document>
   <alertTemplate>
     <title>TVML Viewer</title>
-    <html src="https://dfjdejulio.github.io/TVML-Viewer/index.html"/>
+    <html style="font-size: 36;" src="https://dfjdejulio.github.io/TVML-Viewer/index.html"/>
   </alertTemplate>
 </document>
