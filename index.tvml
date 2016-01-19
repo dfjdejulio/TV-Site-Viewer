@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
   <alertTemplate>
-    <title>You're Viewing TVML!</title>
-    <description>You're now viewing a TVML file that was fetched over the web.  It's not a very interesting one, though!  You should go make your own and enter the URL on the start page.</description>
+    <title>TVML Viewer</title>
+    <html src="https://dfjdejulio.github.io/TVML-Viewer/index.html"/>
   </alertTemplate>
 </document>
