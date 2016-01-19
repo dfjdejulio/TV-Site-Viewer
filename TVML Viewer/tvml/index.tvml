@@ -22,6 +22,10 @@
                     <title>HTML</title>
                     <subtitle>Demo of rendering very limited HTML</subtitle>"
                 </listItemLockup>
+                <listItemLockup href="refresh1.tvml">
+                    <title>Page Refresh</title>
+                    <subtitle>Demo of meta-refresh substitute</subtitle>"
+                </listItemLockup>
             </section>
         </list>
     </listTemplate>
