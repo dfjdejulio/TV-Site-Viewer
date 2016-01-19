@@ -15,4 +15,6 @@ this app at that area, and you're off and running.
 
 * Provide usage instructions.
 
+* Add replacement for meta refresh.
+
 * Something something Bonjour something.
