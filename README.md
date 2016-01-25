@@ -19,4 +19,4 @@ this app at that area, and you're off and running.
 
 ## A Note on Licensing
 
-The project license is currently GPL, but we have not yet accepted any pull requests under those terms, so the original author maintians the right to release it under other licenses.  In particular, the binary that we've submitted to Apple for the app store is *not* distributed under the GPL.  If you need it under another license, talk to us.
+The project license is currently GPL, but we have not yet accepted any pull requests under those terms, so the original author retains the right to release it under other licenses.  In particular, the binary that we've submitted to Apple for the app store is *not* distributed under the GPL.  If you need it under another license, talk to us.
