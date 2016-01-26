@@ -7,10 +7,10 @@ var lastDoc;
 var lastDelay = null;
 
 function handleDocumentDelay() {
-    new SimplePage(nextUrl, lastUrl).replace();
+    new TVSiteEngine(nextUrl, lastUrl).replace();
 }
 
-var SimplePage = function(relUrl, base) {
+var TVSiteEngine = function(relUrl, base) {
     var self = this;
     var url = tvjsutil.urlRelativeTo(relUrl, base);
 
@@ -31,11 +31,11 @@ var SimplePage = function(relUrl, base) {
                 case ('go'): // Go to the location in the "addressbar".
                     var addressbar = ele.ownerDocument.getElementById('addressbar');
                     var address = addressbar.getFeature('Keyboard').text;
-                    new SimplePage(address, url).load();
+                    new TVSiteEngine(address, url).load();
                     break;
                 case ('replace'):
                     if (href) {
-                        new SimplePage(href, url).replace();
+                        new TVSiteEngine(href, url).replace();
                     }
                     break;
                 case ('video'): // Play the "href".
@@ -55,7 +55,7 @@ var SimplePage = function(relUrl, base) {
         } else {
             // In the absence of a navtype, fetch the href and go.
             if(href) {
-                new SimplePage(href, url).load();
+                new TVSiteEngine(href, url).load();
             }
         }
     }

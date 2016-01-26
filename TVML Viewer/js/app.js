@@ -6,7 +6,7 @@ App.onLaunch = function(options) {
                     console.log("Couldn't load built-in scripts.");
                     tvjsutil.nslog("Couldn't load built-in scripts.");
                     } else {
-                    new SimplePage(options.STARTURL, options.BASEURL).load();
+                    new TVSiteEngine(options.STARTURL, options.BASEURL).load();
                     }
                     }
                     );
