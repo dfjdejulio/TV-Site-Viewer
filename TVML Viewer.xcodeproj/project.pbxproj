@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		4719F3DF1C407D95000974CF /* TVMLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVMLKit.framework; path = System/Library/Frameworks/TVMLKit.framework; sourceTree = SDKROOT; };
-		472A655E1BEE8C690093418F /* TVML Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TVML Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		472A655E1BEE8C690093418F /* TV Site Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Site Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		472A65621BEE8C690093418F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		472A65641BEE8C690093418F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		472A65651BEE8C690093418F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		472A655F1BEE8C690093418F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				472A655E1BEE8C690093418F /* TVML Viewer.app */,
+				472A655E1BEE8C690093418F /* TV Site Viewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		472A655D1BEE8C690093418F /* TVML Viewer */ = {
+		472A655D1BEE8C690093418F /* TV Site Viewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 472A65751BEE8C6A0093418F /* Build configuration list for PBXNativeTarget "TVML Viewer" */;
+			buildConfigurationList = 472A65751BEE8C6A0093418F /* Build configuration list for PBXNativeTarget "TV Site Viewer" */;
 			buildPhases = (
 				472A655A1BEE8C690093418F /* Sources */,
 				472A655B1BEE8C690093418F /* Frameworks */,
@@ -103,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = "TVML Viewer";
+			name = "TV Site Viewer";
 			productName = "TVML Viewer";
-			productReference = 472A655E1BEE8C690093418F /* TVML Viewer.app */;
+			productReference = 472A655E1BEE8C690093418F /* TV Site Viewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				472A655D1BEE8C690093418F /* TVML Viewer */,
+				472A655D1BEE8C690093418F /* TV Site Viewer */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +259,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				INFOPLIST_FILE = "TVML Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;
@@ -275,7 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				INFOPLIST_FILE = "TVML Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;
@@ -297,7 +297,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		472A65751BEE8C6A0093418F /* Build configuration list for PBXNativeTarget "TVML Viewer" */ = {
+		472A65751BEE8C6A0093418F /* Build configuration list for PBXNativeTarget "TV Site Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				472A65761BEE8C6A0093418F /* Debug */,
