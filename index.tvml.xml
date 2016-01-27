@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="tvml.xsl"?>
 <document>
   <alertTemplate>
-    <title>TVML Viewer</title>
-    <html style="font-size: 36;" src="https://dfjdejulio.github.io/TVML-Viewer/index.html"/>
+    <title>TV Site Viewer</title>
+    <html style="font-size: 36;" src="https://dfjdejulio.github.io/TV-Site-Viewer/index.html"/>
   </alertTemplate>
 </document>
