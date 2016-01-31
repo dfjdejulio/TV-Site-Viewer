@@ -22,6 +22,7 @@
 	<listItemLockup>
 	  <title>HTML Test</title>
 	  <subtitle>Testing HTML element in a few locations.</subtitle>
+	</listItemLockup>
       </section>
       <section>
 	<header><title>Management</title></header>
