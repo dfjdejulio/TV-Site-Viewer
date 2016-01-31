@@ -10,12 +10,11 @@
                     <title>Address Bar</title>
                     <subtitle>Enter a URL manually.</subtitle>
                 </listItemLockup>
-                <!--
+                <!-- Got permission for this from the site owner. -->
                 <listItemLockup href="prog.tvml">
                     <title>Music for Programming</title>
                     <subtitle>Image and audio from "musicforprogramming.net"</subtitle>"
                 </listItemLockup>
-                 -->
                 <listItemLockup href="html.tvml">
                     <title>HTML</title>
                     <subtitle>Demo of rendering very limited HTML</subtitle>"
