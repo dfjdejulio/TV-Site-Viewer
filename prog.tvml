@@ -8,7 +8,7 @@
 	<asset src="http://datashat.net/music_for_programming_1-datassette.mp3" />
       </audio>
     </background>
-    <menubar>
+    <menuBar>
       <section>
       <menuItem navtype="back">
 	<title>Back</title>
@@ -17,6 +17,6 @@
 	<title>Open Podcast</title>
       </menuItem>
       </section>
-    </menubar>
+    </menuBar>
   </mainTemplate>
 </document>
