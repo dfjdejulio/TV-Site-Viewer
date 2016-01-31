@@ -15,12 +15,15 @@
 	  <title>m3u8 Test</title>
 	  <subtitle>Attempt to "play" a .m3u8 file.</subtitle>
 	</listItemLockup>
+	<listItemLockup>
+	  <title>Timestamp Test</title>
+	  <subtitle>Here's a timestamp: <timestamp/></subtitle>
+	</listItemLockup>
       </section>
       <section>
 	<header><title>Management</title></header>
 	<listItemLockup navtype="replace" href="tests.tvml">
 	  <title>Refresh This List</title>
-	  <subtitle>Last loaded at TIMESTAMP_PLACEHOLDER.</subtitle>
 	</listItemLockup>
       </section>
     </list>
