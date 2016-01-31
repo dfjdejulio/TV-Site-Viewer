@@ -8,12 +8,12 @@
 	<asset src="http://datashat.net/music_for_programming_1-datassette.mp3" />
       </audio>
     </background>
-    <menuBar>
+    <menuBar style="color: black;">
       <section>
       <menuItem navtype="back">
 	<title>Back</title>
       </menuItem>
-      <menuItem navtype="open" href="https://itunes.apple.com/us/podcast/music-for-programming/id500565620?mt=2">
+      <menuItem navtype="open" href="pcast://musicforprogramming.net/rss.php">
 	<title>Open Podcast</title>
       </menuItem>
       </section>
