@@ -19,7 +19,7 @@
 	  <title>VLC m3u8 Test</title>
 	  <subtitle>Attempt to "play" a .m3u8 file via VLC.</subtitle>
 	</listItemLockup>
-	<listItemLockup navtype="open" href="https://itunes.apple.com/us/podcast/music-for-programming/id500565620?mt=2">
+	<listItemLockup navtype="open" href="pcast://musicforprogramming.net/rss.php">
 	  <title>Podcast Test</title>
 	  <subtitle>Experiments with the "music for programming" podcast.</subtitle>
 	</listItemLockup>
