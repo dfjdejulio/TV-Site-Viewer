@@ -12,6 +12,7 @@
 	<header><title>Management</title></header>
 	<listItemLockup navtpe="replace" href="tests.tvml">
 	  <title>Refresh This List</title>
+	  <subtitle>Last loaded at TIMESTAMP_PLACEHOLDER.</subtitle>
 	</listItemLockup>
       </section>
     </list>
