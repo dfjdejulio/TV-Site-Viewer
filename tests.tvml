@@ -7,10 +7,14 @@
     <list>
       <section>
 	<header><title>Current Tests</title></header>
+	<listItemLockup navtype="video" href="test.m3u8">
+	  <title>m3u8 Test</title>
+	  <subtitle>Attempt to "play" a .m3u8 file.</subtitle>
+	</listItemLockup>
       </section>
       <section>
 	<header><title>Management</title></header>
-	<listItemLockup navtpe="replace" href="tests.tvml">
+	<listItemLockup navtype="replace" href="tests.tvml">
 	  <title>Refresh This List</title>
 	  <subtitle>Last loaded at TIMESTAMP_PLACEHOLDER.</subtitle>
 	</listItemLockup>
