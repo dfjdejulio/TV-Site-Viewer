@@ -19,7 +19,7 @@
       <section>
 	<header>
 	  <title>Management</title>
-	  <timestamp/>
+	  <timestamp format="hh:MM aaa"/>
 	</header>
 	<listItemLockup navtype="replace" href="tests.tvml">
 	  <title>Refresh This List</title>
