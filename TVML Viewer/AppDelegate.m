@@ -67,6 +67,8 @@
     appControllerContext.launchOptions = myLaunchOptions;
 
     [TVElementFactory registerViewElementClass:[TVViewElement class] forElementName:@"html"];
+    [TVElementFactory registerViewElementClass:[TVViewElement class] forElementName:@"timestamp"];
+    // Note to self: consider splitting the extended interface creators for each element out into their own classes.
     [[TVInterfaceFactory sharedInterfaceFactory] setExtendedInterfaceCreator:self];
 
     self.appController = [[TVApplicationController alloc] initWithContext:appControllerContext window: self.window delegate: self];
@@ -82,6 +84,7 @@
 
 - (UIView *) viewForElement:(TVViewElement *)element existingView:(UIView *)existingView
 {
+    // Handle <html/> elements.
     if ([element.elementName isEqualToString:@"html"]) {
         UITextView *view;
         if (existingView) {
@@ -102,6 +105,24 @@
         NSDictionary *attributes;
         NSData *htmlData = [NSData dataWithContentsOfURL:url];
         view.attributedText = [[NSAttributedString alloc] initWithData:htmlData options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType} documentAttributes:&attributes error:&error];
+        return view;
+    }
+
+    // Handle <timestamp/> elements.
+    if ([element.elementName isEqualToString:@"timestamp"]) {
+        UITextView *view;
+        if (existingView) {
+            view = (UITextView *)existingView;
+        } else {
+            view = [UITextView new];
+        }
+        NSString *dateFormat = element.attributes[@"format"];
+        if (!dateFormat) {
+            dateFormat = @"yyyy-MM-dd 'at' hh:mm aaa zzz";
+        }
+        NSDateFormatter *dateFormatter = [NSDateFormatter new];
+        [dateFormatter setDateFormat: dateFormat];
+        view.text = [dateFormatter stringFromDate:[NSDate date]];
         return view;
     }
 
