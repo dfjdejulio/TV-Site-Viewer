@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <listTemplate>
+    <banner>
+      <title>List of Tests</title>
+    </banner>
+    <list>
+      <section>
+	<header><title>Current Tests</title></header>
+      </section>
+      <section>
+	<header><title>Management</title></header>
+	<listItemLockup navtpe="replace" href="tests.tvml">
+	  <title>Refresh This List</title>
+	</listItemLockup>
+      </section>
+    </list>
+  </listTemplate>
+</document>
