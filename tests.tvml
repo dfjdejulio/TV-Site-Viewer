@@ -3,6 +3,7 @@
   <listTemplate>
     <banner>
       <title>List of Tests</title>
+      <timestamp/>
     </banner>
     <list>
       <section>
@@ -17,7 +18,8 @@
 	</listItemLockup>
 	<listItemLockup>
 	  <title>Timestamp Test</title>
-	  <subtitle>Here's a timestamp: <timestamp/></subtitle>
+	  <subtitle>Here's a timestamp.</subtitle>
+	  <timestamp/>
 	</listItemLockup>
 	<listItemLockup>
 	  <title>HTML Test</title>
