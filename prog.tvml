@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- I got permission for this from the site owner. -->
+<document>
+  <mainTemplate>
+    <background>
+      <img src="http://musicforprogramming.net/img/mfp.jpg" />
+      <audio>
+	<asset src="http://datashat.net/music_for_programming_1-datassette.mp3" />
+      </audio>
+    </background>
+    <menubar>
+      <menuItem navtype="back">
+	<title>Back</title>
+      </menuItem>
+      <menuItem navtype="open" href="https://itunes.apple.com/us/podcast/music-for-programming/id500565620?mt=2">
+	<title>Open Podcast</title>
+      </menuItem>
+    </menubar>
+  </mainTemplate>
+</document>
