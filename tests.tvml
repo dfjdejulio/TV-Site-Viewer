@@ -19,6 +19,9 @@
 	  <title>Timestamp Test</title>
 	  <subtitle>Here's a timestamp: <timestamp/></subtitle>
 	</listItemLockup>
+	<listItemLockup>
+	  <title>HTML Test</title>
+	  <subtitle>Testing HTML element in a few locations.</subtitle>
       </section>
       <section>
 	<header><title>Management</title></header>
