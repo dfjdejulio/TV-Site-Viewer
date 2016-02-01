@@ -5,6 +5,7 @@
       <title>App Integration Tests</title>
     </banner>
     <list>
+      <section>
       <listItemLockup navtype="open" href="boodlerstormplay:///playphase/0">
 	<title>Pocket Storm</title>
 	<subtitle>Tell "Pocket Storm" to begin a storm cycle.</subtitle>
@@ -17,6 +18,7 @@
 	<title>Netflix</title>
 	<subtitle>Try to open a specific show in Netflix.</subtitle>
       </listItemLockup>
+      </section>
     </list>
   </listTemplate>
 </document>
