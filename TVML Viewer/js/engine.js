@@ -47,6 +47,10 @@ var TVSiteEngine = function(relUrl, base) {
                     player.playlist = playlist;
                     player.play();
                     break;
+                case ('open'): // Open the "href" in another app.
+                    var address = tvjsutil.urlRelativeTo(ele.getAttribute('href'), url);
+                    tvjsutil.open(address);
+                    break;
 				default:
                     console.log({message: 'unknown navtype on element',
                                 element: ele});

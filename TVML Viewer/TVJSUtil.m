@@ -43,5 +43,12 @@
     return value;
 }
 
+- (BOOL) open:(NSString *) urlString
+{
+    NSURL *url = [NSURL URLWithString:urlString];
+    BOOL status = [[UIApplication sharedApplication] openURL:url];
+    return status;
+}
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 #import <JavaScriptCore/JavaScriptCore.h>
 
 @protocol TVJSUtilExports <JSExport>
@@ -22,6 +23,9 @@
 
 // Load an absolute URL into a string.
 - (NSString *) load: (NSString *) urlString;
+
+// Ask the OS to open a URL in whatever app implements support for it.
+- (BOOL) open: (NSString *) urlString;
 
 @end
 
