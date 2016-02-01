@@ -7,6 +7,10 @@
     <list>
       <section>
 	<header><title>Current Tests</title></header>
+	<listItemLockup href="apps.tvml">
+	  <title>App Integration Tests</title>
+	  <subtitle>Test the use of custom URL schemes from various apps.</subtitle>
+	</listItemLockup>
 	<listItemLockup navtype="video" href="http://dfjdejulio.github.io/TV-Site-Viewer/testvid.m4v">
 	  <title>Video Test</title>
 	  <subtitle>Play a .m4v file recorded on an iPad.</subtitle>

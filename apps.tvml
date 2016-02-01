@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <listTemplate>
+    <banner>
+      <title>App Integration Tests</title>
+    </banner>
+    <list>
+      <listItemLockup navtype="open" href="boodlerstormplay:///playphase/0">
+	<title>Pocket Storm</title>
+	<subtitle>Tell "Pocket Storm" to begin a storm cycle.</subtitle>
+      </listItemLockup>
+    </list>
+    <list>
+      <listItemLockup navtype="open" href="pcast://musicforprogramming.net/rss.php">
+	<title>Podcasts</title>
+	<subtitle>Tell "Podcasts" to open the "Music for Programming" podcast.</subtitle>
+      </listItemLockup>
+    </list>
+    <list>
+      <listItemLockup navtype="open" href="nflx://">
+	<title>Netflix</title>
+	<subtitle>Try to open a specific show in Netflix.</subtitle>
+      </listItemLockup>
+    </list>
+</document>
