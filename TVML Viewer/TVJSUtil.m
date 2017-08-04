@@ -45,8 +45,11 @@
 
 - (BOOL) open:(NSString *) urlString
 {
+    __block BOOL status = @NO;
     NSURL *url = [NSURL URLWithString:urlString];
-    BOOL status = [[UIApplication sharedApplication] openURL:url];
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    [[UIApplication sharedApplication] openURL:url options: @{} completionHandler: ^(BOOL success) { status = success; dispatch_semaphore_signal(semaphore); }];
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
     return status;
 }
 
