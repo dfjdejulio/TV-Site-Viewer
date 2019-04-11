@@ -223,7 +223,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -270,7 +269,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -287,7 +285,6 @@
 				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.aisb.TVML-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TVOS_DEPLOYMENT_TARGET = 10.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -304,7 +301,6 @@
 				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = initial;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.aisb.TVML-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TVOS_DEPLOYMENT_TARGET = 10.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
